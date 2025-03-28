@@ -9,67 +9,99 @@ let whosTurnHtml = document.getElementById('whosTurn')
 
 let WhosTurn = "x";
 
+function Win(){
+        WinArray = 
+    [
+        "", "", "",
+        "", "", "",
+        "", "", "",
+    ];
+
+    WhosTurn = "x";
+
+    for(let i = 0; i <= WinArray.length - 1; i++){
+        plain  = document.querySelector(`#plainId${i}`)
+        plain.innerHTML = ""
+    }
+}
+
 function CheckWinX(){
     // Check rows
     if(WinArray[0] === "x" && WinArray[1] === "x" && WinArray[2] === "x"){
-        console.log("Player X wins");
+        alert("Player X wins");
+        Win()
     }
     else if(WinArray[3] === "x" && WinArray[4] === "x" && WinArray[5] === "x"){
-        console.log("Player X wins");
+        alert("Player X wins");
+        Win()
     }
     else if(WinArray[6] === "x" && WinArray[7] === "x" && WinArray[8] === "x"){
-        console.log("Player X wins");
+        alert("Player X wins");
+        Win()
     }
 
 
     else if(WinArray[0] === "x" && WinArray[4] === "x" && WinArray[8] === "x"){
-        console.log("Player X wins");
+        alert("Player X wins");
+        Win()
     }
     else if(WinArray[2] === "x" && WinArray[4] === "x" && WinArray[6] === "x"){
-        console.log("Player X wins");
+        alert("Player X wins");
+        Win()
     }
 
 
     else if(WinArray[0] === "x" && WinArray[3] === "x" && WinArray[6] === "x"){
-        console.log("Player X wins");
+        alert("Player X wins");
+        Win()
     }
     else if(WinArray[1] === "x" && WinArray[4] === "x" && WinArray[7] === "x"){
-        console.log("Player X wins");
+        alert("Player X wins");
+        Win()
     }
     else if(WinArray[2] === "x" && WinArray[5] === "x" && WinArray[8] === "x"){
-        console.log("Player X wins");
+        alert("Player X wins");
+        Win()
     }
 }
 
 function CheckWinO(){
     // Check rows
     if(WinArray[0] === "o"  && WinArray[1] === "o" && WinArray[2] === "o"){
-        console.log("Player O wins");
+        alert("Player O wins");
+        Win()
     }
     else if(WinArray[3] === "o" && WinArray[4] === "o" && WinArray[5] === "o"){
-        console.log("Player O wins");
+        alert("Player O wins");
+        Win()
     }
     else if(WinArray[6] === "o" && WinArray[7] === "o" && WinArray[8] === "o"){
-        console.log("Player O wins");
+        alert("Player O wins");
+        Win()
     }
 
 
     else if(WinArray[0] === "o" && WinArray[4] === "o" && WinArray[8] === "o"){
-        console.log("Player O wins");
+        alert("Player O wins");
+        Win()
     }
     else if(WinArray[2] === "o" && WinArray[4] === "o" && WinArray[6] === "o"){
-        console.log("Player O wins");
+        alert("Player O wins");
+        Win()
     }
 
 
     else if(WinArray[0] === "o" && WinArray[3] === "o" && WinArray[6] === "o"){
-        console.log("Player O wins");
+        alert("Player O wins");
+        Win()
     }
     else if(WinArray[1] === "o" && WinArray[4] === "o" && WinArray[7] === "o"){
-        console.log("Player O wins");
+        alert("Player O wins");
+        Win()
     }
     else if(WinArray[2] === "o" && WinArray[5] === "o" && WinArray[8] === "o"){
-        console.log("Player O wins");
+        alert("Player O wins");
+        Win()
     }
 }
 
