@@ -5,19 +5,22 @@ let WinArray =
     "", "", "",
 ];
 
+let IsFirstTurnHappend = true
+
 let whosTurnHtml = document.getElementById('whosTurn')
 
 let WhosTurn = "x";
 
 function Win(){
-        WinArray = 
+    WhosTurn = "x";
+    whosTurnHtml.innerHTML = `${WhosTurn} turn!`
+
+    WinArray = 
     [
         "", "", "",
-        "", "", "",
+                "", "", "",
         "", "", "",
     ];
-
-    WhosTurn = "x";
 
     for(let i = 0; i <= WinArray.length - 1; i++){
         plain  = document.querySelector(`#plainId${i}`)
@@ -28,80 +31,80 @@ function Win(){
 function CheckWinX(){
     // Check rows
     if(WinArray[0] === "x" && WinArray[1] === "x" && WinArray[2] === "x"){
-        alert("Player X wins");
-        Win()
+        whosTurnHtml.innerHTML = "Player X wins!"
+        setTimeout(Win, 2000)
     }
     else if(WinArray[3] === "x" && WinArray[4] === "x" && WinArray[5] === "x"){
-        alert("Player X wins");
-        Win()
+        whosTurnHtml.innerHTML = "Player X wins!"
+        setTimeout(Win, 2000)
     }
     else if(WinArray[6] === "x" && WinArray[7] === "x" && WinArray[8] === "x"){
-        alert("Player X wins");
-        Win()
+        whosTurnHtml.innerHTML = "Player X wins!"
+        setTimeout(Win, 2000)
     }
 
 
     else if(WinArray[0] === "x" && WinArray[4] === "x" && WinArray[8] === "x"){
-        alert("Player X wins");
-        Win()
+        whosTurnHtml.innerHTML = "Player X wins!"
+        setTimeout(Win, 2000)
     }
     else if(WinArray[2] === "x" && WinArray[4] === "x" && WinArray[6] === "x"){
-        alert("Player X wins");
-        Win()
+        whosTurnHtml.innerHTML = "Player X wins!"
+        setTimeout(Win, 2000)
     }
 
 
     else if(WinArray[0] === "x" && WinArray[3] === "x" && WinArray[6] === "x"){
-        alert("Player X wins");
-        Win()
+        whosTurnHtml.innerHTML = "Player X wins!"
+        setTimeout(Win, 2000)
     }
     else if(WinArray[1] === "x" && WinArray[4] === "x" && WinArray[7] === "x"){
-        alert("Player X wins");
-        Win()
+        whosTurnHtml.innerHTML = "Player X wins!"
+        setTimeout(Win, 2000)
     }
     else if(WinArray[2] === "x" && WinArray[5] === "x" && WinArray[8] === "x"){
-        alert("Player X wins");
-        Win()
+        whosTurnHtml.innerHTML = "Player X wins!"
+        setTimeout(Win, 2000)
     }
 }
 
 function CheckWinO(){
     // Check rows
     if(WinArray[0] === "o"  && WinArray[1] === "o" && WinArray[2] === "o"){
-        alert("Player O wins");
-        Win()
+        whosTurnHtml.innerHTML = "Player O wins!"
+        setTimeout(Win, 2000)
     }
     else if(WinArray[3] === "o" && WinArray[4] === "o" && WinArray[5] === "o"){
-        alert("Player O wins");
-        Win()
+        whosTurnHtml.innerHTML = "Player O wins!"
+        setTimeout(Win, 2000)
     }
     else if(WinArray[6] === "o" && WinArray[7] === "o" && WinArray[8] === "o"){
-        alert("Player O wins");
-        Win()
+        whosTurnHtml.innerHTML = "Player O wins!"
+        setTimeout(Win, 2000)
     }
 
 
     else if(WinArray[0] === "o" && WinArray[4] === "o" && WinArray[8] === "o"){
-        alert("Player O wins");
-        Win()
+        whosTurnHtml.innerHTML = "Player O wins!"
+        setTimeout(Win, 2000)
     }
     else if(WinArray[2] === "o" && WinArray[4] === "o" && WinArray[6] === "o"){
-        alert("Player O wins");
-        Win()
+        whosTurnHtml.innerHTML = "Player O wins!"
+        setTimeout(Win, 2000)
     }
 
 
     else if(WinArray[0] === "o" && WinArray[3] === "o" && WinArray[6] === "o"){
-        alert("Player O wins");
-        Win()
+        whosTurnHtml.innerHTML = "Player O wins!"
+        setTimeout(Win, 2000)
     }
     else if(WinArray[1] === "o" && WinArray[4] === "o" && WinArray[7] === "o"){
-        alert("Player O wins");
-        Win()
+        whosTurnHtml.innerHTML = "Player O wins!"
+        setTimeout(Win, 2000)
     }
     else if(WinArray[2] === "o" && WinArray[5] === "o" && WinArray[8] === "o"){
-        alert("Player O wins");
-        Win()
+        whosTurnHtml.innerHTML = "Player O wins!"
+        setTimeout(Win, 2000)
     }
 }
 
